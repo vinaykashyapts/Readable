@@ -1,0 +1,17 @@
+.blog-posts {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.blog-posts ul {
+  margin-top: 0;
+  padding: 0;
+}
+
+.blog-posts li {
+  list-style-type: none;
+  box-shadow: 1px 1px 0.5px 0.8px rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  padding: 10px 10px 10px 20px;
+  margin-bottom: 10px;
+}

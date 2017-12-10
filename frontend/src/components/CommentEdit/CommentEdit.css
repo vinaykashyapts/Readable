@@ -1,0 +1,36 @@
+.edit-comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-comment h1 {
+  margin: 0 0 10px 0;
+}
+
+.edit-comment textarea {
+  margin: 0 0 10px 0;
+  border: 1px solid;
+  box-shadow: 1px 1px 0.5px 0.8px rgba(0, 0, 0, .2);
+  padding: 10px 10px
+}
+
+.actions button {
+  margin-left: 8px;
+  border: 1px;
+  padding: 10px 8px;
+  color: #fff;
+  font-size: .9em;
+  cursor: pointer;
+}
+
+.cancel {
+  background-color: #e23e3e;
+}
+
+.edit {
+  background: #429044;
+}
+.edit:disabled {
+  background: #A1B79F;
+  cursor: not-allowed;
+}

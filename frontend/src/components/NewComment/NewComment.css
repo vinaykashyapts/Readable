@@ -1,0 +1,35 @@
+.new-comment {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0,0,0,.4);
+  margin: 0 0 10px 0;
+  padding: 10px 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.new-comment input {
+  margin: 0 0 10px 0;
+  border: 1px solid rgba(0, 0, 0, .2);
+  padding: 10px 10px
+}
+
+.button-container button {
+  margin-left: 8px;
+  border: 1px;
+  padding: 10px 8px;
+  border-radius: 5px;
+  color: #fff;
+  background: #429044;
+  font-size: .9em;
+  cursor: pointer;
+}
+
+.button-container button:disabled {
+  background: #A1B79F;
+  cursor: not-allowed;
+}

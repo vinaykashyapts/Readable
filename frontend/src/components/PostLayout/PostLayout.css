@@ -1,0 +1,30 @@
+.post-layout h1 {
+  margin: 0 0 10px 0;
+}
+
+.post-layout em {
+  margin: 0 0 10px 0;
+}
+
+.post-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.post-header-tag {
+  align-self: flex-start;
+}
+
+.post-header-buttons {
+  margin-left: auto;
+}
+
+.post-layout {
+  width: 600px;
+}
+
+.post-layout p {
+  max-width: 600px;
+  word-wrap: break-word;
+}
