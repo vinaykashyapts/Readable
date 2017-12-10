@@ -4,8 +4,7 @@ import CategoryTag from '../CategoryTag/CategoryTag'
 import ButtonsBox from '../ButtonsBox/ButtonsBox'
 import PostEdit from '../PostEdit/PostEdit'
 import VoteController from '../VoteController/VoteController'
-import { MdAccountCircle } from 'react-icons/lib/md'
-
+import { MdAccountCircle, MdComment } from 'react-icons/lib/md'
 
 class PostLayout extends Component {
   state = {
@@ -42,7 +41,7 @@ class PostLayout extends Component {
   }
 
   render() {
-    const { post } = this.props
+    const { post, comments } = this.props
     const { openEdit } = this.state
     return (
     <div className='post-layout'>
@@ -58,7 +57,10 @@ class PostLayout extends Component {
           <h1>{post.title}</h1>
           <em>Posted by <MdAccountCircle/> {post.author}.</em>
           <p>{post.body}</p>
-          <VoteController score={post.voteScore} voteFunction={this.handleVote}/>
+          <div className='votes-comments-layout'>
+            <p> <MdComment/> {comments.length === 1 ? `${comments.length} comment` : `${comments.length} comments`}.</p>
+            <VoteController score={post.voteScore} voteFunction={this.handleVote}/>
+          </div>
           <PostEdit open={openEdit} post={post} editFunction={this.handleEdit} close={this.closeEditModal}></PostEdit>
           <hr></hr>
         </div>

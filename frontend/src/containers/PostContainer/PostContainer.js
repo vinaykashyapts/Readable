@@ -26,7 +26,7 @@ class PostContainer extends Component {
       return (
         <div className='post-container'>
            <div>
-             <PostLayout post={post} onPostVote={postVote} onPostDelete={postDelete} onPostEdit={postEdit}/>
+             <PostLayout post={post} comments={comments} onPostVote={postVote} onPostDelete={postDelete} onPostEdit={postEdit}/>
              <CommentsBox comments={comments} onCommentVote={commentVote} onCommentDelete={commentDelete} onAddComment={this.handlerNewComment} onCommentEdit={commentEdit}/>
            </div>
          </div>
